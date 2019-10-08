@@ -1,0 +1,90 @@
+#rightColumn {
+    margin-left: 40%;
+    width: 55%; height: 1080px;
+    background-color: white;
+    color: black;
+}
+
+@keyframes slidein-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slidein-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 56px;
+    color: #fd6acb
+}
+#aboutMeTitle {
+    animation: 3s slidein-right;
+}
+#educationTitle {
+    animation: 3s slidein-left;
+}
+p {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: grey;
+}
+#aboutMeContainer {
+    display: none;
+    text-align: left;
+    background-color: #fecccd;
+    padding: 50px 100px;
+}
+#downloadResumeContainer {
+    display: none;
+    text-align: center;
+    background-color: #fd6acb;
+    padding: 1px 0px;
+    margin-top: 30px; margin-bottom: 15px;
+    color: white;
+}
+#downloadResumeContainer > p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+}
+
+a {text-decoration: none;}
+
+#programmingTools {
+    padding-top: 125px;
+    text-align: center;
+    line-height: 35px;
+}
+#textJava, #textPython, #textHTML, #textFlutter {display: none;}
+#programmingTools > p{
+    font-size: 36px;
+    color: #fd6acb;
+}
+#educationContainer {
+    display: none;
+    float: right;
+}
+#educationContainer > h1 {
+    text-align: right;
+}
+#educationContainer > p {
+    text-align: center;
+    background: #fecccd;
+    padding: 100px 150px;
+}
