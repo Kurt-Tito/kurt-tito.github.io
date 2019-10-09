@@ -50,6 +50,57 @@ h1 {
 #educationTitle::before {display: inline-block; position: absolute; content: ""; border-top: .2rem solid #fd6acb;  width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); right: 300px;}
 #educationIcon {display: none; background: #fd6acb; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid #fd6acb 4px; transform: translateY(-4.5rem);}
 
+#projectTitle {
+    position: absolute;
+    transform: translateY(6.5em);
+}
+#projectTitle::after {display: inline-block; position: absolute; content: ""; border-top: .2rem solid #fd6acb; width: 45rem; margin: 0 1.5rem; transform: translateY(3rem); left: 300px;}
+#projectIcon {display: block; position: absolute; background: #fd6acb; width: 50px; height: 50px; border-radius: 50%; border: solid #fd6acb 4px; transform: translate(990px, 26.5rem);}
+.projectTimeline {
+    position: absolute;
+    width: 90%;
+    margin: 0 auto;
+    transform: translateY(33rem);
+    left: 100px;
+}
+.projectTimeline::before {
+    position: absolute;
+    content: '';
+    border-left: 0.2rem solid #fd6acb;
+    height: 48rem;
+    left: -100px;
+    transform: translateY(2rem);
+}
+.container {
+    background: #fecccd;
+    font-weight: normal; font-size: 12px;
+    margin-bottom: 3em;
+}
+/* tail before the container */
+.container::after {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    border: medium solid #fecccd;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #fecccd transparent transparent;
+    transform: translateX(-0.8em) translateY(-125%);
+}
+.content {
+    padding: 10px 25px;
+}
+.content > h1 {
+    font-size: 20px; font-weight: 400;
+}
+.content > p {
+    font-size: 16px; font-weight: 300;
+}
+.date {
+    font-size: 14px; font-weight: 300; color: white; 
+}
+
 p {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
@@ -84,7 +135,7 @@ a {text-decoration: none;}
     line-height: 30px;
     float: left;
 }
-#textJava, #textPython, #textHTML, #textFlutter {display: none;}
+#textJava, #textPython, #textHTML, #textFlutter {display: block;}
 #programmingTools > p{
     font-size: 32px;
     color: #fd6acb;

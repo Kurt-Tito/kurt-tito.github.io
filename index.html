@@ -37,7 +37,7 @@
             </div>
         </div>
         <div id="rightColumn">
-            <h1 id="aboutMeTitle">About Me</h1><img id="buddyIcon" class="divider" src="images/buddy_min.png">
+            <h1 id="aboutMeTitle">About Me</h1><img id="buddyIcon" class="initDivider" src="images/buddy_min.png">
             <div id="aboutMeContainer">
                 <p>Computer Science graduate with a strong passion for programming and eagerness to learn. Currently seeking entry-level software development oppurtunities and aiming to showcase my talent within the industry.
                         I offer extensive hands-on experience in IT, software development, web development, databases (relational and noSQL), git, and effective team collaboration.
@@ -48,7 +48,7 @@
                     <p>*-. V I E W _ R E S U M E .-*</p>
                 </div>    
             </a>
-            <h1 id="educationTitle">Education</h1><img id="educationIcon" class="divider" src="images/cap.png">
+            <h1 id="educationTitle">Education</h1><img id="educationIcon" class="initDivider" src="images/cap.png">
             <div id="educationAndToolsContainer">
                 <ul id="programmingTools">
                         <p id="textJava">java</p>
@@ -62,20 +62,60 @@
                             August 2014 - May 2019</p>
                 </div>
             </div>
+            <h1 id="projectTitle">Projects</h1><img id="projectIcon" class="divider" src="images/roundcode.png">
+            <div class="projectTimeline">
+                <div class="container left">
+                    <div class="content">
+                        <h1>fitnessapp</h1>
+                        <p>Fitnessapp (wip) is a workout log application designed to manage multiple user workout
+                                routines and to help visualize muscle progress and overall fitness statistics.
+                                Fitnessapp integrates Firebase as it's back-end service to manage user accounts and store user data
+                        </p>
+                        <p class="date">August 2019</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h1>Quiz-Taker</h1>
+                        <p>A small android app for creating and completing quizzes</p>
+                        <p class="date">March 2019 - April 2019</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h1>jmp</h1>
+                        <p>A small project where I created a simple 2D, infinite-scrolling jumping game made with Unity.
+                                Controls: Tap to jump, Tap & Hold to jump longer.
+                                This project was intended for learning the Unity Engine and deploying applications to the Play Store.
+                                All assets were designed and created by me
+                        </p>
+                        <p class="date">January 2019</p>
+                     </div>
+                </div>
+                <div class="container left">
+                        <div class="content">
+                            <h1>Software Engineering Project</h1>
+                            <p>ollection of Java games within a single game hub. Contains procedurally generated
+                                    mazes, A* Pathfinding enemies, projectile collisions, 2-player chess, and many more
+                            </p>
+                            <p class="date">November 2018 - December 2018</p>
+                         </div>
+                </div>
+            </div>
         </div>
     <script>
         $(function() {
             $('body').sakura();
         });
         $(document).ready(function() {
-            $('.divider').delay(2700).fadeIn(1000);
+            $('.initDivider').delay(2700).fadeIn(1000);
             $('#aboutMeContainer').fadeIn(1000);
             $('#educationContainer').fadeIn(1000);
             $('#downloadResumeContainer').fadeIn(1000);
-            $('#textJava').delay(1400).fadeIn(1000);
-            $('#textPython').delay(1600).fadeIn(1000);
-            $('#textHTML').delay(1800).fadeIn(1000);
-            $('#textFlutter').delay(2000).fadeIn(1000);
+            //$('#textJava').delay(1400).fadeIn(1000);
+            //$('#textPython').delay(1600).fadeIn(1000);
+            //$('#textHTML').delay(1800).fadeIn(1000);
+            //$('#textFlutter').delay(2000).fadeIn(1000);
             //$('#aboutMeTitle').show("slide", {direction: "left"}, 1000);
         });
     </script>
