@@ -92,7 +92,7 @@ h1 {
     content: "";
     position: absolute;
     width: 20px; height: 20px;
-    background: #fecccd;
+    background: white;
     border: 4px solid #fecccd;
     border-radius: 50%;
     transform: translate(-4rem, 575%);
