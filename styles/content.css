@@ -66,9 +66,9 @@ h1 {
 .projectTimeline::before {
     position: absolute;
     content: '';
-    border-left: 0.2rem solid #fd6acb;
+    border-left: 0.2rem solid #fecccd;
     height: 48rem;
-    left: -100px;
+    left: -50px;
     transform: translateY(2rem);
 }
 .container {
@@ -87,6 +87,15 @@ h1 {
     border-width: 15px 15px 15px 0;
     border-color: transparent #fecccd transparent transparent;
     transform: translateX(-0.8em) translateY(-125%);
+}
+.container::before {
+    content: "";
+    position: absolute;
+    width: 20px; height: 20px;
+    background: #fecccd;
+    border: 4px solid #fecccd;
+    border-radius: 50%;
+    transform: translate(-4rem, 575%);
 }
 .content {
     padding: 10px 25px;
