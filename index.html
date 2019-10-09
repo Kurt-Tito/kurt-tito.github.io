@@ -23,7 +23,8 @@
     <body>
         <div id="leftColumn">
             <div id="profileCenter">
-                <img src="images/raidenmei.jpg" alt="">
+                <!--<img src="https://avatars3.githubusercontent.com/u/26492384?s=460&v=4" alt="">-->
+                <img src="images/hokusai.png" alt="" style="width:300px; height:300px; object-fit:cover; object-position: -75px 35px;">
                 <div id="contactLinks">
                     <a href="https://github.com/Kurt-Tito/">github</a>
                     <a href="https://www.linkedin.com/in/kurt-tito-8751aa187/">linkedin</a>
@@ -62,7 +63,7 @@
                             August 2014 - May 2019</p>
                 </div>
             </div>
-            <h1 id="projectTitle">Projects</h1><img id="projectIcon" class="divider" src="images/roundcode.png">
+            <h1 id="projectTitle">Projects</h1><img id="projectIcon" class="projectDivider" src="images/roundcode.png">
             <div class="projectTimeline">
                 <div class="container left">
                     <div class="content">
@@ -110,15 +111,51 @@
             $('body').sakura();
         });
         $(document).ready(function() {
-            $('.initDivider').delay(2700).fadeIn(1000);
+            $('.initDivider').delay().fadeIn(2500);
             $('#aboutMeContainer').fadeIn(1000);
             $('#educationContainer').fadeIn(1000);
             $('#downloadResumeContainer').fadeIn(1000);
+
+            document.getElementById("projectTitle").style.display = "none";
+            document.getElementById("projectIcon").style.display = "none";
+
+            $('#section1').addClass('changeColor');
             //$('#textJava').delay(1400).fadeIn(1000);
             //$('#textPython').delay(1600).fadeIn(1000);
             //$('#textHTML').delay(1800).fadeIn(1000);
             //$('#textFlutter').delay(2000).fadeIn(1000);
             //$('#aboutMeTitle').show("slide", {direction: "left"}, 1000);
+        });
+        $(document).scroll(function() {
+            var y = $(this).scrollTop();
+            if (y >= 0 && y <= 800) {
+                $('#section1').addClass('changeColor');
+                $('#section2').removeClass('changeColor');
+                $('#section3').removeClass('changeColor');
+            }
+            else if (y > 800) {
+                $('#section1').removeClass('changeColor');
+                $('#section2').addClass('changeColor');
+                $('#section3').removeClass('changeColor');
+            } else {
+                $('#section1').removeClass('changeColor');
+                $('#section2').removeClass('changeColor');
+                $('#section3').addClass('changeColor');
+            }
+
+            if (y > 200) {
+                document.getElementById("projectTitle").style.display = "block";
+                document.getElementById("projectTitle").style.animation = "3s slidein-right";
+                $("#projectIcon").delay().fadeIn(2500);
+            }
+            $('.projectTimeline').children('.container').each(function() {
+                var pos = $(this).offset().top;
+                var height = $(this).height();
+                var top = $(window).scrollTop();
+                if (pos < top + height && pos + height > top) {
+                    $(this).fadeIn(2500);
+                }
+            });
         });
     </script>
     <script src="scripts/jquery-sakura.js"></script>

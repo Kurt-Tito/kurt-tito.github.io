@@ -16,6 +16,8 @@
         transform: translateX(0);
     }
 }
+
+/* .slidein-right {animation-name: slidein-right; animation-duration: 3s; visibility: visible !important;} */
 @keyframes slidein-right {
     0% {
         opacity: 0;
@@ -40,26 +42,26 @@ h1 {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     font-size: 56px;
-    color: #fd6acb
+    color: lightblue
 }
 #aboutMeTitle {animation: 3s slidein-right; margin: 25px 0px 25px 0px;}
-#aboutMeTitle::before {display: inline-block; content: ""; border-top: .2rem solid #fd6acb; width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); left: 300px; position: absolute;}
-#buddyIcon {display: none; background: #fd6acb; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid #fd6acb 4px; transform: translate(990px, -5.5rem);}
+#aboutMeTitle::before {display: inline-block; content: ""; border-top: .2rem solid lightblue; width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); left: 300px; position: absolute;}
+#buddyIcon {display: none; background: lightblue; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translate(990px, -5.5rem);}
 
 #educationTitle {animation: 3s slidein-left; text-align: right; margin: 75px 0px 10px 0px;}
-#educationTitle::before {display: inline-block; position: absolute; content: ""; border-top: .2rem solid #fd6acb;  width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); right: 300px;}
-#educationIcon {display: none; background: #fd6acb; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid #fd6acb 4px; transform: translateY(-4.5rem);}
+#educationTitle::before {display: inline-block; position: absolute; content: ""; border-top: .2rem solid lightblue;  width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); right: 300px;}
+#educationIcon {display: none; background: lightblue; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translateY(-4.5rem);}
 
 #projectTitle {
     position: absolute;
-    transform: translateY(6.5em);
+    top: 63rem;
 }
-#projectTitle::after {display: inline-block; position: absolute; content: ""; border-top: .2rem solid #fd6acb; width: 45rem; margin: 0 1.5rem; transform: translateY(3rem); left: 300px;}
-#projectIcon {display: block; position: absolute; background: #fd6acb; width: 50px; height: 50px; border-radius: 50%; border: solid #fd6acb 4px; transform: translate(990px, 26.5rem);}
+#projectTitle::after {display: inline-block; position: absolute; content: ""; border-top: .2rem solid lightblue; width: 45rem; margin: 0 1.5rem; transform: translateY(3rem); left: 300px;}
+#projectIcon {display: none; position: absolute; background: lightblue; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translate(990px, 26.5rem);}
 .projectTimeline {
     position: absolute;
     width: 90%;
-    margin: 0 auto;
+    margin-bottom: 25px;
     transform: translateY(33rem);
     left: 100px;
 }
@@ -72,6 +74,7 @@ h1 {
     transform: translateY(2rem);
 }
 .container {
+    display: none;
     background: #fecccd;
     font-weight: normal; font-size: 12px;
     margin-bottom: 3em;
@@ -125,7 +128,7 @@ p {
 #downloadResumeContainer {
     display: none;
     text-align: center;
-    background-color: #fd6acb;
+    background-color: lightblue;
     padding: 1px 0px;
     margin-top: 30px; margin-bottom: 15px;
     color: white;
@@ -147,7 +150,7 @@ a {text-decoration: none;}
 #textJava, #textPython, #textHTML, #textFlutter {display: block;}
 #programmingTools > p{
     font-size: 32px;
-    color: #fd6acb;
+    color: lightblue;
 }
 #educationContainer {
     display: none;

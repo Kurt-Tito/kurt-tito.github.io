@@ -1,7 +1,7 @@
 #leftColumn {
     font-family: "Open Sans"; font-size: 22px; font-style: normal; font-weight: 300;
     width: 35%; height: 1080px;
-    background-color: #fd6acb;
+    background-color: lightblue;
     text-align: center;
     float: left;
     position: fixed;
@@ -39,10 +39,12 @@
     border: solid white 2px;
     display: table;
 }
-#section1 {
-    background-color: #fecccd;
-    border: solid #fecccd 2px;
-}
+
 #section2 {
     margin: 25% 0;
+}
+
+.changeColor {
+    background-color: #fecccd;
+    border: solid #fecccd 2px;
 }
