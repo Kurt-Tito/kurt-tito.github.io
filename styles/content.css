@@ -79,6 +79,7 @@ h1 {
     top: 63rem;
 }
 #projectTitle::after {display: inline-block; position: absolute; content: ""; border-top: .2rem solid lightblue; width: 45rem; margin: 0 1.5rem; transform: translateY(3rem); left: 300px;}
+/*!attention: project icon and animations causing up and down stutter during animation. Main culprit is the relative position of timeline container */
 #projectIcon {display: none; position: absolute; background: lightblue; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translate(990px, 26.5rem);}
 .projectTimeline {
     position: absolute;
@@ -91,15 +92,16 @@ h1 {
     position: absolute;
     content: '';
     border-left: 0.2rem solid #fecccd;
-    height: 48rem;
+    height: 50rem;
     left: -50px;
-    transform: translateY(2rem);
+    transform: translateY(4rem);
 }
 .container {
     position: relative;
     background: #fecccd;
     font-weight: normal; font-size: 12px;
     margin-bottom: 3em;
+    width: 100%;
     /* border-radius: 10px; */
 }
 /* tail before the container */
@@ -127,7 +129,7 @@ h1 {
     padding: 10px 25px;
 }
 .content > h1 {
-    font-size: 20px; font-weight: 400;
+    font-size: 20px; font-weight: 400; color: #fd6acb;
 }
 .content > p {
     font-size: 16px; font-weight: 300;
