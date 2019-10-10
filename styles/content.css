@@ -38,17 +38,39 @@
     }
 }
 
+@keyframes fadeleft {
+    0% {
+        opacity: 0;
+        transform: translateX(15%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 h1 {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
     font-size: 56px;
     color: lightblue
 }
-#aboutMeTitle {animation: 3s slidein-right; margin: 25px 0px 25px 0px;}
+#aboutMeTitle {animation: 2s fadeleft; margin: 25px 0px 25px 0px;}
 #aboutMeTitle::before {display: inline-block; content: ""; border-top: .2rem solid lightblue; width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); left: 300px; position: absolute;}
 #buddyIcon {display: none; background: lightblue; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translate(990px, -5.5rem);}
 
-#educationTitle {animation: 3s slidein-left; text-align: right; margin: 75px 0px 10px 0px;}
+#educationTitle {animation: 2s fadeRight; text-align: right; margin: 75px 0px 10px 0px;}
 #educationTitle::before {display: inline-block; position: absolute; content: ""; border-top: .2rem solid lightblue;  width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); right: 300px;}
 #educationIcon {display: none; background: lightblue; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translateY(-4.5rem);}
 
@@ -62,7 +84,7 @@ h1 {
     position: absolute;
     width: 90%;
     margin-bottom: 25px;
-    transform: translateY(33rem);
+    transform: translateY(35rem);
     left: 100px;
 }
 .projectTimeline::before {
@@ -74,10 +96,11 @@ h1 {
     transform: translateY(2rem);
 }
 .container {
-    display: none;
+    position: relative;
     background: #fecccd;
     font-weight: normal; font-size: 12px;
     margin-bottom: 3em;
+    /* border-radius: 10px; */
 }
 /* tail before the container */
 .container::after {
@@ -120,6 +143,7 @@ p {
     color: grey;
 }
 #aboutMeContainer {
+    /* border-radius: 14px; */
     display: none;
     text-align: left;
     background-color: #fecccd;
@@ -153,7 +177,9 @@ a {text-decoration: none;}
     color: lightblue;
 }
 #educationContainer {
+    /* border-radius: 14px; */
     display: none;
+    background: #fecccd;
     float: right;
 }
 #educationContainer > h1 {
@@ -161,6 +187,5 @@ a {text-decoration: none;}
 }
 #educationContainer > p {
     text-align: center;
-    background: #fecccd;
     padding: 100px 150px;
 }

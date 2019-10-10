@@ -84,7 +84,7 @@
                         <p class="date">March 2019 - April 2019</p>
                     </div>
                 </div>
-                <div class="container left">
+                <div class="container">
                     <div class="content">
                         <h1>jmp</h1>
                         <p>A week-long project where I created a simple 2D, infinite-scrolling jumping game made with Unity.
@@ -95,7 +95,7 @@
                         <p class="date">January 2019</p>
                      </div>
                 </div>
-                <div class="container left">
+                <div class="container">
                         <div class="content">
                             <h1>Software Engineering Project</h1>
                             <p>Collection of Java games within a single game hub. Contains procedurally generated
@@ -111,6 +111,11 @@
             $('body').sakura();
         });
         $(document).ready(function() {
+            var timeline = document.getElementsByClassName("container");
+            for (var i = 0; i < timeline.length; i++) {
+                timeline[i].style.display = "none";
+            }
+            document.getElementById("projectTitle").style.display = "none";
             $('.initDivider').delay().fadeIn(2500);
             $('#aboutMeContainer').fadeIn(1000);
             $('#educationContainer').fadeIn(1000);
@@ -145,17 +150,18 @@
 
             if (y > 200) {
                 document.getElementById("projectTitle").style.display = "block";
-                document.getElementById("projectTitle").style.animation = "3s slidein-right";
+                document.getElementById("projectTitle").style.animation = "1.5s fadeleft";
                 $("#projectIcon").delay().fadeIn(2500);
             }
-            $('.projectTimeline').children('.container').each(function() {
-                var pos = $(this).offset().top;
-                var height = $(this).height();
-                var top = $(window).scrollTop();
-                if (pos < top + height && pos + height > top) {
-                    $(this).fadeIn(2500);
+
+            var timeline = document.getElementsByClassName("container");
+            for (var i = 0; i < timeline.length; i++) {
+                if (y > (300 + i*200)) {
+                    timeline[i].style.display = "block";
+                    timeline[i].style.animation = "2s fadeleft";
                 }
-            });
+                    
+            }
         });
     </script>
     <script src="scripts/jquery-sakura.js"></script>
