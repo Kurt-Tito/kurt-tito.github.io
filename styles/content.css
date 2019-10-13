@@ -206,6 +206,7 @@ p {
 a {text-decoration: none;}
 
 #programmingTools {
+    display: none;
     text-align: center;
     margin-left: 125px;
     line-height: 30px;

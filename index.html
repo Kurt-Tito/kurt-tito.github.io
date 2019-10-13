@@ -52,10 +52,10 @@
             <h1 id="educationTitle">Education</h1><img id="educationIcon" class="initDivider" src="images/cap.png">
             <div id="educationAndToolsContainer">
                 <ul id="programmingTools">
-                        <p id="textJava">java</p>
-                        <p id="textPython">python</p>
-                        <p id="textHTML">html</p>
-                        <p id="textFlutter">flutter</p>
+                    <p id="textJava">java</p>
+                    <p id="textPython">python</p>
+                    <p id="textHTML">html</p>
+                    <p id="textFlutter">flutter</p>
                 </ul>
                 <div id="educationContainer">
                     <p>Bachelor in Computer Science <br>
@@ -111,63 +111,7 @@
                 </div>
             </div>
         </div>
-    <script>
-        $(function() {
-            $('body').sakura();
-        });
-        $(document).ready(function() {
-            var timeline = document.getElementsByClassName("container");
-            for (var i = 0; i < timeline.length; i++) {
-                timeline[i].style.display = "none";
-            }
-            document.getElementById("projectTitle").style.display = "none";
-            $('.initDivider').delay().fadeIn(2500);
-            $('#aboutMeContainer').fadeIn(1000);
-            $('#educationContainer').fadeIn(1000);
-            $('#downloadResumeContainer').fadeIn(1000);
-
-            document.getElementById("projectTitle").style.display = "none";
-            document.getElementById("projectIcon").style.display = "none";
-
-            $('#section1').addClass('changeColor');
-            //$('#textJava').delay(1400).fadeIn(1000);
-            //$('#textPython').delay(1600).fadeIn(1000);
-            //$('#textHTML').delay(1800).fadeIn(1000);
-            //$('#textFlutter').delay(2000).fadeIn(1000);
-        });
-        $(document).scroll(function() {
-            var y = $(this).scrollTop();
-            if (y >= 0 && y <= 600) {
-                $('#section1').addClass('changeColor');
-                $('#section2').removeClass('changeColor');
-                $('#section3').removeClass('changeColor');
-            }
-            else if (y > 600) {
-                $('#section1').removeClass('changeColor');
-                $('#section2').addClass('changeColor');
-                $('#section3').removeClass('changeColor');
-            } else {
-                $('#section1').removeClass('changeColor');
-                $('#section2').removeClass('changeColor');
-                $('#section3').addClass('changeColor');
-            }
-
-            if (y > 200) {
-                document.getElementById("projectTitle").style.display = "block";
-                document.getElementById("projectTitle").style.animation = "2s slidein-right";
-                $("#projectIcon").delay().fadeIn(2500);
-            }
-
-            var timeline = document.getElementsByClassName("container");
-            for (var i = 0; i < timeline.length; i++) {
-                if (y > (300 + i*200)) {
-                    timeline[i].style.display = "block";
-                    timeline[i].style.animation = "2s fadeleft";
-                }
-                    
-            }
-        });
-    </script>
+    <script src="scripts/main.js"></script>
     <script src="scripts/jquery-sakura.js"></script>
     <script src="scripts/jquery-sakura.min.js"></script>
     </body>
