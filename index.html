@@ -65,6 +65,7 @@
             </div>
             <h1 id="projectTitle">Projects</h1><img id="projectIcon" class="projectDivider" src="images/roundcode.png">
             <div class="projectTimeline">
+                <img id="flutterIC" src="images/flutter_75.png">
                 <div class="container left">
                     <div class="content">
                         <h1>fitnessapp</h1>
@@ -75,6 +76,7 @@
                         <p class="date">August 2019</p>
                     </div>
                 </div>
+                <img id="androidIC" src="images/androidstudio_75.png">
                 <div class="container left">
                     <div class="content">
                         <h1>Quiz-Taker</h1>
@@ -84,6 +86,7 @@
                         <p class="date">March 2019 - April 2019</p>
                     </div>
                 </div>
+                <img id="unityIC" src="images/unity_75.png">
                 <div class="container">
                     <div class="content">
                         <h1>jmp</h1>
@@ -95,6 +98,7 @@
                         <p class="date">January 2019</p>
                      </div>
                 </div>
+                <img id="javaIC" src="images/java2_75.png">
                 <div class="container">
                         <div class="content">
                             <h1>Software Engineering Project</h1>
@@ -133,12 +137,12 @@
         });
         $(document).scroll(function() {
             var y = $(this).scrollTop();
-            if (y >= 0 && y <= 800) {
+            if (y >= 0 && y <= 600) {
                 $('#section1').addClass('changeColor');
                 $('#section2').removeClass('changeColor');
                 $('#section3').removeClass('changeColor');
             }
-            else if (y > 800) {
+            else if (y > 600) {
                 $('#section1').removeClass('changeColor');
                 $('#section2').addClass('changeColor');
                 $('#section3').removeClass('changeColor');
@@ -150,7 +154,7 @@
 
             if (y > 200) {
                 document.getElementById("projectTitle").style.display = "block";
-                document.getElementById("projectTitle").style.animation = "1.5s fadeleft";
+                document.getElementById("projectTitle").style.animation = "2s slidein-right";
                 $("#projectIcon").delay().fadeIn(2500);
             }
 
