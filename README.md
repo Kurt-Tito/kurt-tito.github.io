@@ -1,3 +1,3 @@
 # kurt-tito.github.io
 ## Preview
-![](res/screenshot.png)
+<img src="res/screenshot.PNG"/>
