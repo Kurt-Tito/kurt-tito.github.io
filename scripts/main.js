@@ -1,10 +1,10 @@
 /* start sakura animation */
-$(function() {
+$(function () {
     $('body').sakura();
 });
 
-/* Initialize when document is ready */ 
-$(document).ready(function() {
+/* Initialize when document is ready */
+$(document).ready(function () {
     /* sets timeline container display to none for the fade in */
     var timeline = document.getElementsByClassName("container");
     for (var i = 0; i < timeline.length; i++) {
@@ -27,14 +27,13 @@ $(document).ready(function() {
 });
 
 /* Scrolling down the document, sets progress bubbles */
-$(document).scroll(function() {
+$(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y >= 0 && y <= 600) {
         $('#section1').addClass('changeColor');
         $('#section2').removeClass('changeColor');
         $('#section3').removeClass('changeColor');
-    }
-    else if (y > 600) {
+    } else if (y > 600) {
         $('#section1').removeClass('changeColor');
         $('#section2').addClass('changeColor');
         $('#section3').removeClass('changeColor');
@@ -53,10 +52,10 @@ $(document).scroll(function() {
     /* triggers timeline containers fadein */
     var timeline = document.getElementsByClassName("container");
     for (var i = 0; i < timeline.length; i++) {
-        if (y > (300 + i*200)) {
+        if (y > (300 + i * 200)) {
             timeline[i].style.display = "block";
             timeline[i].style.animation = "2s fadeleft";
         }
-            
+
     }
 });

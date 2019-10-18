@@ -1,118 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kurt Tito Portfolio hosted on GitHub</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles/profile.css">
-        <link rel="stylesheet" type="text/css" href="styles/content.css">
-        <link href="styles/jquery-sakura.css" rel="stylesheet">
-        <style>
-            html, body {
-                display: flex;
-                padding-top: 0px;
-                margin: 0px;
-                overflow: visible;
-                color: black;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="leftColumn">
-            <div id="profileCenter">
-                <!--<img src="https://avatars3.githubusercontent.com/u/26492384?s=460&v=4" alt="">-->
-                <img src="images/hokusai.png" alt="" style="width:300px; height:300px; object-fit:cover; object-position: -75px 35px;">
-                <div id="contactLinks">
-                    <a href="https://github.com/Kurt-Tito/">github</a>
-                    <a href="https://www.linkedin.com/in/kurt-tito-8751aa187/">linkedin</a>
-                    <a href="mailto: kurtcedricktito@gmail.com">gmail</a>
-                </div>
-            </div>
-            <div id="progressBubble">
-                <span class="dot" id="section1"></span>
-                <span class="dot" id="section2"></span>
-                <span class="dot" id="section3"></span>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurt Tito Portfolio hosted on GitHub</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/profile.css">
+    <link rel="stylesheet" type="text/css" href="styles/content.css">
+    <link href="styles/jquery-sakura.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            display: flex;
+            padding-top: 0px;
+            margin: 0px;
+            overflow: visible;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="leftColumn">
+        <div id="profileCenter">
+            <!--<img src="https://avatars3.githubusercontent.com/u/26492384?s=460&v=4" alt="">-->
+            <img src="images/hokusai.png" alt=""
+                style="width:300px; height:300px; object-fit:cover; object-position: -75px 35px;">
+            <div id="contactLinks">
+                <a href="https://github.com/Kurt-Tito/">github</a>
+                <a href="https://www.linkedin.com/in/kurt-tito-8751aa187/">linkedin</a>
+                <a href="mailto: kurtcedricktito@gmail.com">gmail</a>
             </div>
         </div>
-        <div id="rightColumn">
-            <h1 id="aboutMeTitle">About Me</h1><img id="buddyIcon" class="initDivider" src="images/buddy_min.png">
-            <div id="aboutMeContainer">
-                <p>Computer Science graduate with a strong passion for programming and eagerness to learn. Currently seeking entry-level software development oppurtunities and aiming to showcase my talent within the industry.
-                        I offer extensive hands-on experience in IT, software development, web development, databases (relational and noSQL), git, and effective team collaboration.
-                </p>
+        <div id="progressBubble">
+            <span class="dot" id="section1"></span>
+            <span class="dot" id="section2"></span>
+            <span class="dot" id="section3"></span>
+        </div>
+    </div>
+    <div id="rightColumn">
+        <h1 id="aboutMeTitle">About Me</h1><img id="buddyIcon" class="initDivider" src="images/buddy_min.png">
+        <div id="aboutMeContainer">
+            <p>Computer Science graduate with a strong passion for programming and eagerness to learn. Currently seeking
+                entry-level software development oppurtunities and aiming to showcase my talent within the industry.
+                I offer extensive hands-on experience in IT, software development, web development, databases
+                (relational and noSQL), git, and effective team collaboration.
+            </p>
+        </div>
+        <a href="res/resume.jpg">
+            <div id="downloadResumeContainer">
+                <p>*-. V I E W _ R E S U M E .-*</p>
             </div>
-            <a href="res/resume.jpg">
-                <div id="downloadResumeContainer">
-                    <p>*-. V I E W _ R E S U M E .-*</p>
-                </div>    
-            </a>
-            <h1 id="educationTitle">Education</h1><img id="educationIcon" class="initDivider" src="images/cap.png">
-            <div id="educationAndToolsContainer">
-                <ul id="programmingTools">
-                    <p id="textJava">java</p>
-                    <p id="textPython">python</p>
-                    <p id="textHTML">html</p>
-                    <p id="textFlutter">flutter</p>
-                </ul>
-                <div id="educationContainer">
-                    <p>Bachelor in Computer Science <br>
-                        California State University, Long Beach <br>
-                            August 2014 - May 2019</p>
+        </a>
+        <h1 id="educationTitle">Education</h1><img id="educationIcon" class="initDivider" src="images/cap.png">
+        <div id="educationAndToolsContainer">
+            <ul id="programmingTools">
+                <p id="textJava">java</p>
+                <p id="textPython">python</p>
+                <p id="textHTML">html</p>
+                <p id="textFlutter">flutter</p>
+            </ul>
+            <div id="educationContainer">
+                <p>Bachelor in Computer Science <br>
+                    California State University, Long Beach <br>
+                    August 2014 - May 2019</p>
+            </div>
+        </div>
+        <h1 id="projectTitle">Projects</h1><img id="projectIcon" class="projectDivider" src="images/roundcode.png">
+        <div class="projectTimeline">
+            <img id="flutterIC" src="images/flutter_75.png">
+            <div class="container left">
+                <div class="content">
+                    <h1>fitnessapp</h1>
+                    <p>Fitnessapp (wip) is a workout log application designed to manage multiple user workout
+                        routines and to help visualize muscle progress and overall fitness statistics.
+                        Fitnessapp integrates Firebase as it's back-end service to manage user accounts and store user
+                        data.
+                    </p>
+                    <p class="date">August 2019</p>
                 </div>
             </div>
-            <h1 id="projectTitle">Projects</h1><img id="projectIcon" class="projectDivider" src="images/roundcode.png">
-            <div class="projectTimeline">
-                <img id="flutterIC" src="images/flutter_75.png">
-                <div class="container left">
-                    <div class="content">
-                        <h1>fitnessapp</h1>
-                        <p>Fitnessapp (wip) is a workout log application designed to manage multiple user workout
-                                routines and to help visualize muscle progress and overall fitness statistics.
-                                Fitnessapp integrates Firebase as it's back-end service to manage user accounts and store user data.
-                        </p>
-                        <p class="date">August 2019</p>
-                    </div>
+            <img id="androidIC" src="images/androidstudio_75.png">
+            <div class="container left">
+                <div class="content">
+                    <h1>Quiz-Taker</h1>
+                    <p>An android app my team and I developed for Mobile Application Development course.
+                        Application allows users to create and complete quizzes. I implemented the app drawer and its
+                        functionalities:
+                        change profile picture, change name, change password, about, and logout.</p>
+                    <p class="date">March 2019 - April 2019</p>
                 </div>
-                <img id="androidIC" src="images/androidstudio_75.png">
-                <div class="container left">
-                    <div class="content">
-                        <h1>Quiz-Taker</h1>
-                        <p>An android app my team and I developed for Mobile Application Development course. 
-                            Application allows users to create and complete quizzes. I implemented the app drawer and its functionalities:
-                            change profile picture, change name, change password, about, and logout.</p>
-                        <p class="date">March 2019 - April 2019</p>
-                    </div>
+            </div>
+            <img id="unityIC" src="images/unity_75.png">
+            <div class="container">
+                <div class="content">
+                    <h1>jmp</h1>
+                    <p>A week-long project where I created a simple 2D, infinite-scrolling jumping game made with Unity.
+                        Controls: Tap to jump, Tap & Hold to jump longer.
+                        This project was intended for learning the Unity Engine and deploying applications to the Play
+                        Store.
+                        All assets were designed and created by me.
+                    </p>
+                    <p class="date">January 2019</p>
                 </div>
-                <img id="unityIC" src="images/unity_75.png">
-                <div class="container">
-                    <div class="content">
-                        <h1>jmp</h1>
-                        <p>A week-long project where I created a simple 2D, infinite-scrolling jumping game made with Unity.
-                                Controls: Tap to jump, Tap & Hold to jump longer.
-                                This project was intended for learning the Unity Engine and deploying applications to the Play Store.
-                                All assets were designed and created by me.
-                        </p>
-                        <p class="date">January 2019</p>
-                     </div>
-                </div>
-                <img id="javaIC" src="images/java2_75.png">
-                <div class="container">
-                        <div class="content">
-                            <h1>Software Engineering Project</h1>
-                            <p>Collection of Java games within a single game hub. Contains procedurally generated
-                                    mazes, A* Pathfinding enemies, projectile collisions, 2-player chess, and many more.
-                                    Controls: w, a, s, d, up, down, left, right to move; space, enter to shoot; lmb to select.
-                            </p>
-                            <p class="date">November 2018 - December 2018</p>
-                         </div>
+            </div>
+            <img id="javaIC" src="images/java2_75.png">
+            <div class="container">
+                <div class="content">
+                    <h1>Software Engineering Project</h1>
+                    <p>Collection of Java games within a single game hub. Contains procedurally generated
+                        mazes, A* Pathfinding enemies, projectile collisions, 2-player chess, and many more.
+                        Controls: w, a, s, d, up, down, left, right to move; space, enter to shoot; lmb to select.
+                    </p>
+                    <p class="date">November 2018 - December 2018</p>
                 </div>
             </div>
         </div>
+    </div>
     <script src="scripts/main.js"></script>
     <script src="scripts/jquery-sakura.js"></script>
     <script src="scripts/jquery-sakura.min.js"></script>
-    </body>
+</body>
 </html>

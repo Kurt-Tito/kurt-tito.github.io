@@ -1,39 +1,61 @@
+/* @media only screen and (max-width: 1608px) {
+    #leftColumn {
+        display: none;
+        width: 0;
+        height: 0%;
+    }
+} */
+
 #leftColumn {
-    font-family: "Open Sans"; font-size: 22px; font-style: normal; font-weight: 300;
-    width: 35%; height: 1080px;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    width: 35%;
+    height: 1080px;
     background-color: lightblue;
     text-align: center;
     float: left;
     position: fixed;
 }
+
 #profileCenter {
     padding-left: 10%;
     width: 75%;
     float: left;
 }
-#profileCenter > img{
+
+#profileCenter>img {
     margin-top: 50%;
     border-radius: 50%;
-    width: 225px; height: 225px;
+    width: 225px;
+    height: 225px;
     border: solid white 2px;
 }
-#contactLinks, #contactLinks > a{
-    padding-top: 5%; padding-right: 2%;
+
+#contactLinks,
+#contactLinks>a {
+    padding-top: 5%;
+    padding-right: 2%;
     color: white;
     text-decoration: none;
     word-spacing: 50%;
 }
-#contactLinks > a:hover {
+
+#contactLinks>a:hover {
     color: #fecccd;
 }
+
 #progressBubble {
     padding-top: 50%;
     padding-right: 5%;
     float: right;
     text-align: center;
 }
+
 .dot {
-    width: 30px; height: 30px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border-radius: 50%;
     border: solid white 2px;

@@ -1,64 +1,17 @@
 #rightColumn {
     margin-left: 40%;
-    width: 55%; height: 1080px;
+    width: 55%;
+    height: 1080px;
     background-color: white;
     color: black;
     position: relative;
 }
 
-@keyframes slidein-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* .slidein-right {animation-name: slidein-right; animation-duration: 3s; visibility: visible !important;} */
-@keyframes slidein-right {
-    0% {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeleft {
-    0% {
-        opacity: 0;
-        transform: translateX(15%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-15%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+@keyframes slidein-left {0%{opacity:0;transform:translateX(-100%);}100%{opacity:1;transform:translateX(0);}}
+@keyframes slidein-right {0%{opacity:0;transform:translateX(50%);}100%{opacity:1;transform:translateX(0);}}
+@keyframes fadein {0%{opacity:0;}100%{opacity:1;}}
+@keyframes fadeleft {0%{opacity:0;transform:translateX(15%);}100%{opacity:1;transform:translateX(0);}}
+@keyframes fadeRight {0%{opacity:0;transform:translateX(-15%);}100%{opacity:1;transform:translateX(0);}}
 
 h1 {
     font-weight: 300;
@@ -66,28 +19,98 @@ h1 {
     font-size: 56px;
     color: lightblue
 }
-#aboutMeTitle {animation: 2s fadeleft; margin: 25px 0px 25px 0px;}
-#aboutMeTitle::before {display: inline-block; content: ""; border-top: .2rem solid lightblue; width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); left: 300px; position: absolute;}
-#buddyIcon {display: none; background: lightblue; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translate(990px, -5.5rem);}
 
-#educationTitle {animation: 2s fadeRight; text-align: right; margin: 75px 0px 10px 0px;}
-#educationTitle::before {display: inline-block; position: absolute; content: ""; border-top: .2rem solid lightblue;  width: 45rem; margin: 0 1.5rem; transform: translateY(2.5rem); right: 300px;}
-#educationIcon {display: none; background: lightblue; position: absolute; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translateY(-4.5rem);}
+#aboutMeTitle {
+    animation: 2s fadeleft;
+    margin: 25px 0px 25px 0px;
+}
+
+#aboutMeTitle::before {
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid lightblue;
+    width: 45rem;
+    margin: 0 1.5rem;
+    transform: translateY(2.5rem);
+    left: 300px;
+    position: absolute;
+}
+
+#buddyIcon {
+    display: none;
+    background: lightblue;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid lightblue 4px;
+    transform: translate(990px, -5.5rem);
+}
+
+#educationTitle {
+    animation: 2s fadeRight;
+    text-align: right;
+    margin: 75px 0px 10px 0px;
+}
+
+#educationTitle::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    border-top: .2rem solid lightblue;
+    width: 45rem;
+    margin: 0 1.5rem;
+    transform: translateY(2.5rem);
+    right: 300px;
+}
+
+#educationIcon {
+    display: none;
+    background: lightblue;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid lightblue 4px;
+    transform: translateY(-4.5rem);
+}
 
 #projectTitle {
     position: absolute;
     top: 63rem;
 }
-#projectTitle::after {display: inline-block; position: absolute; content: ""; border-top: .2rem solid lightblue; width: 45rem; margin: 0 1.5rem; transform: translateY(3rem); left: 300px;}
+
+#projectTitle::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    border-top: .2rem solid lightblue;
+    width: 45rem;
+    margin: 0 1.5rem;
+    transform: translateY(3rem);
+    left: 300px;
+}
+
 /*!attention: project icon and animations causing up and down stutter during animation. Main culprit is the relative position of timeline container */
-#projectIcon {display: none; position: absolute; background: lightblue; width: 50px; height: 50px; border-radius: 50%; border: solid lightblue 4px; transform: translate(990px, 26rem);}
+#projectIcon {
+    display: none;
+    position: absolute;
+    background: lightblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid lightblue 4px;
+    transform: translate(990px, 26rem);
+}
+
 .projectTimeline {
     position: absolute;
     width: 90%;
     margin-bottom: 25px;
     transform: translateY(35rem);
     left: 100px;
-}  
+}
+
 .projectTimeline::before {
     position: absolute;
     content: '';
@@ -96,14 +119,17 @@ h1 {
     left: -50px;
     transform: translateY(4rem);
 }
+
 .container {
     position: relative;
     background: #fecccd;
-    font-weight: normal; font-size: 12px;
+    font-weight: normal;
+    font-size: 12px;
     margin-bottom: 3em;
     width: 100%;
     /* border-radius: 10px; */
 }
+
 /* tail before the container */
 .container::after {
     content: "";
@@ -116,6 +142,7 @@ h1 {
     border-color: transparent #fecccd transparent transparent;
     transform: translateX(-0.8em) translateY(-125%);
 }
+
 /* tool icon before the container */
 /* .container::before {
     content: "";
@@ -128,36 +155,44 @@ h1 {
 } */
 
 #flutterIC {
-    width: 40px; height: 40px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    left: -75px; top: 150px;
+    left: -75px;
+    top: 150px;
     border-radius: 50%;
     border: 5px solid #fecccd;
     background: white;
 }
 
 #androidIC {
-    width: 40px; height: 40px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    left: -75px; top: 385px;
+    left: -75px;
+    top: 385px;
     border-radius: 50%;
     border: 5px solid #fecccd;
     background: white;
 }
 
 #unityIC {
-    width: 40px; height: 40px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    left: -75px; top: 615px;
+    left: -75px;
+    top: 615px;
     border-radius: 50%;
     border: 5px solid #fecccd;
     background: white;
 }
 
 #javaIC {
-    width: 40px; height: 40px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    left: -75px; top: 845px;
+    left: -75px;
+    top: 845px;
     border-radius: 50%;
     border: 5px solid #fecccd;
     background: white;
@@ -166,14 +201,29 @@ h1 {
 .content {
     padding: 10px 25px;
 }
-.content > h1 {
-    font-size: 20px; font-weight: 400; color: #fd6acb;
+
+.content>h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fd6acb;
 }
-.content > p {
-    font-size: 16px; font-weight: 300;
+
+.content>p {
+    font-size: 16px;
+    font-weight: 300;
 }
+
+.content>a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fd6acb;
+}
+
 .date {
-    font-size: 14px; font-weight: 300; color: white; 
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
 }
 
 p {
@@ -182,6 +232,7 @@ p {
     font-size: 18px;
     color: grey;
 }
+
 #aboutMeContainer {
     /* border-radius: 14px; */
     display: none;
@@ -189,21 +240,26 @@ p {
     background-color: #fecccd;
     padding: 50px 100px;
 }
+
 #downloadResumeContainer {
     display: none;
     text-align: center;
     background-color: lightblue;
     padding: 1px 0px;
-    margin-top: 30px; margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
     color: white;
 }
-#downloadResumeContainer > p {
+
+#downloadResumeContainer>p {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 #programmingTools {
     display: none;
@@ -212,21 +268,31 @@ a {text-decoration: none;}
     line-height: 30px;
     float: left;
 }
-#textJava, #textPython, #textHTML, #textFlutter {display: block;}
-#programmingTools > p{
+
+#textJava,
+#textPython,
+#textHTML,
+#textFlutter {
+    display: block;
+}
+
+#programmingTools>p {
     font-size: 32px;
     color: lightblue;
 }
+
 #educationContainer {
     /* border-radius: 14px; */
     display: none;
     background: #fecccd;
     float: right;
 }
-#educationContainer > h1 {
+
+#educationContainer>h1 {
     text-align: right;
 }
-#educationContainer > p {
+
+#educationContainer>p {
     text-align: center;
     padding: 100px 150px;
 }
